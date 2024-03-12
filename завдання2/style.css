@@ -1,0 +1,39 @@
+.lesson-container {
+    display: flex;
+    flex-direction: column;
+}
+.lesson-list {
+
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+.lesson-list:nth-child(odd) {
+    background-color: lightblue;
+}
+.lesson-list:nth-child(even) {
+    background-color: lightpink;
+}
+.lesson-list:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+.lesson-list:first-child {
+    font-weight: bold;
+}
+.lesson-list:active {
+    background-color: lightgreen;
+}
+
+.lesson-list:last-child {
+    color: blue;
+}
+.lesson-list:nth-child(3n) {
+    color: purple;
+}
+.lesson-list:nth-child(odd):visited {
+    color: orange;
+}
+.lesson-list:nth-child(even):link {
+    color: green;
+}
